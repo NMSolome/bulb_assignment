@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/bulb.css">
+    <title>BULB ON/OFF</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row txt-position">
+                <div class="col hyt-300 clr-white">
+                    
+                    <h1 v-if="switchBtn">
+                        <img class="img" src="./assets/images/BulbOn.gif" alt="">
+                    </h1>
+                    <h1 v-else>
+                        <img class="img" src="./assets/images/BulbOff.gif" alt="">
+                    </h1>
+                    <button v-on:click="switchBulb" class="btn btn-dark">ON/OFF</button>
+                    <h1>  Hey, click button here ☝ ☝ see what happens ☺ </h1>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <script src="./scripts/vue.js"></script>
+    <script src="./scripts/bulb.js"></script>
+</body>
+
+</html>
